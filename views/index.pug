@@ -1,0 +1,54 @@
+doctype html 
+html 
+    head 
+        title Dance Website 
+        style 
+                include ../public/style.css     
+    body 
+        nav#navbar
+            ul 
+                div#logo
+                    img(src="/public/logo1.png")
+                    | PDNA
+                li #[a Home]
+                li #[a Enquire]
+                li #[a Compete]
+                li #[a Classes]
+        section#introsec 
+            div.large  Welcome to Pio's Dance Academy 
+            div.small  Eat Sleep Dance Repeat
+        section#mission1
+            section#mission 
+                h2  Our Mission
+                div.card 
+                    h3 Elegance over perfection
+                    div.cardbox 
+                        div.card-img
+                            img(src="/public/1.png")
+                        div.cardcontent
+                            p Because its better
+                div.card 
+                    h3 Experienced Faculty
+                    div.cardbox 
+                        div.card-img
+                            img(src="/public/2.png")
+                        div.cardcontent
+                            p Because why not
+                div.card 
+                    h3 Personalised Touch
+                    div.cardbox 
+                        div.card-img
+                            img(src="/public/3.png")
+                        div.cardcontent
+                            p Because you deserve it
+        section#introspon 
+            h3 Our Sponsors
+            div#sponsors 
+                img(src="/public/dance-city.svg", class="simg")
+                img(src="/public/dance-visions.svg", class="simg")
+                img(src="/public/fiesta-dance-club.svg", class="simg")
+                img(src="/public/JD.png", class="simg")
+        footer#footer
+            | © 2024 PDNA Dance Private Limited | All rights reserved
+        script 
+            include ../public/index.js
